@@ -4,14 +4,13 @@ This repo contains documentation about Esri Professional Services' solution Ente
 
 
 ## Features
-* Schema Documentation
-* App Deployment Guide
-* Environment Setup Guide
+* Install-Deployment
+* Configuration
+* Schema
 
 ## Instructions
 
-1. Fork and then clone the repo. 
-2. Read documentation.
+1. Read documentation.
 
 ## Resources
 
