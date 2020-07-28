@@ -28,6 +28,7 @@
 | Hazmat                | String 128 | Freeform contextual description                                                                                         | Optional          |
 | InboundArriveTime     | Date       | Date/time (in UTC) when this order is available for dispatch from depot                                                 | Optional          |
 | IsLocked              | String 5   | true or false - is this order locked to the route?                                                                      | Optional          |
+| LoadID                | String 128 | The load into which this order is grouped. Common accross all GeoOrders in the load. Editable by the BSI. Temp by ERM   | Optional          |
 | MaxViolationTime1     | Double     | Maximum time in minutes that this order service can be violated (late) for first time window                            | Optional          |
 | ModelRevenue          | Double     | Assignment Priority in the case of order demand outstripping route capacity for a shift                                 | Optional          |
 | OrderDescription      | String 256 | Freeform order description                                                                                              | Optional          |
