@@ -1,0 +1,49 @@
+|Field Name             | Data Type  | Description                                                                                                             | Optional/Required |
+|-----------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
+| OrderID               | String 128 | The order ID as globally unique within a given plan scope (String 128)                                                  | Required          |
+| AssignmentRule        | Int        | Rule for how this order should be assigned to a route. Set to 3 = Optimizer decides                                     | Required          | 
+| CollectionName        | String 128 | Name of the collection that this order is a part of                                                                     | Required          |
+| CurbApproach          | Int        | Requirement for how this location must be approached. Not Null small int. e.g. Either Side of Vehicle = 0               | Required          |
+| ServiceTime           | Float      | Time in minutes (fractional) it is anticipated this order will take to complete service                                 | Required          |
+| StopType              | String 8   | Pickup or Delivery                                                                                                      | Required          |
+| TimeZone              | String 50  | Time zone descriptive. E.g. "America/Los Angeles" in TZ Database format (https://en.wikipedia.org/wiki/Tz_database)     | Required          |
+| X                     | Double     | Longitude in geographic coordinate system                                                                               | Required          |
+| Y                     | Double     | Latitude in geographic coordinate system                                                                                | Required          |
+| Address               | String 100 | Freeform contextual description. (String 100) nullable                                                                  | Optional          |
+| AgentRevenue          | Double     | Descriptive Double precision                                                                                            | Optional          |
+| AppointmentCode       | String 1   | Freeform contextual description                                                                                         | Optional          |
+| City                  | String 50  | Freeform contextual description                                                                                         | Optional          |
+| Consignee             | String 100 | Freeform contextual description                                                                                         | Optional          |
+| Consigner             | String 100 | Freeform contextual description                                                                                         | Optional          |
+| ConsignerNotes        | String 50  | Freeform contextual description                                                                                         | Optional          |
+| ConsignerNotes        | String 50  | Freeform contextual description                                                                                         | Optional          |
+| CorporateRevenue      | Double     | Descriptive Double precision                                                                                            | Optional          |
+| DepotName             | String 10  | Depot.depotname where this order originates and/or terminates                                                           | Optional          |
+| Destination           | String 50  | Freeform destination. Supply chain context. An order should terminate at the destination                                | Optional          |
+| DispLocDesc           | String 100 | Descriptive                                                                                                             | Optional          |
+| DispLocName           | String 10  | Dispatch area. where this order will be dispatched. A dispatch area might contain more than one depot                   | Optional          |
+| Geoorder_Cube         | Double     | Cubic volume in this order for calculating capacity                                                                     | Optional          |
+| Geoorder_Pieces       | Double     | Number of pieces in this order for calculating capacity                                                                 | Optional          |
+| Geoorder_Weight       | Double     | Weight of this order for calculating capacity                                                                           | Optional          |
+| Hazmat                | String 128 | Freeform contextual description                                                                                         | Optional          |
+| InboundArriveTime     | Date       | Date/time (in UTC) when this order is available for dispatch from depot                                                 | Optional          |
+| IsLocked              | String 5   | true or false - is this order locked to the route?                                                                      | Optional          |
+| LoadID                | String 128 | The load into which this order is grouped. Common accross all GeoOrders in the load. Editable by the BSI. Temp by ERM   | Optional          |
+| MaxViolationTime1     | Double     | Maximum time in minutes that this order service can be violated (late) for first time window                            | Optional          |
+| ModelRevenue          | Double     | Assignment Priority in the case of order demand outstripping route capacity for a shift                                 | Optional          |
+| OrderDescription      | String 256 | Freeform order description                                                                                              | Optional          |
+| Origin                | String 50  | Freeform origin description. supply chain. An order might originate at a location not referenced in the current plan    | Optional          |
+| OutboundDepartTime    | Date       | Date/time (in UTC) when this order must be delivered to depot                                                           | Optional          |
+| PostalCode            | String 10  | Freeform contextual description                                                                                         | Optional          |
+| RouteName             | String 128 | Only to be used in combination with an assignmentrule other than 3                                                      | Optional          |
+| RouteRevenue          | Double     | Descriptive Double precision                                                                                            | Optional          |
+| Sequence              | Int        | Only to be used in combination with an assignmentrule other than 3                                                      | Optional          |
+| ServiceCommitDate     | Date       | Descriptive                                                                                                             | Optional          |
+| ServiceLevel          | String 50  | Freeform contextual description                                                                                         | Optional          |
+| Specialty             | String 50  | Specialties required by this order's stop as a space delimited list                                                     | Optional          |
+| State_Province        | String 2   | Freeform contextual description                                                                                         | Optional          |
+| Street                | String 50  | Freeform contextual description                                                                                         | Optional          |
+| TransitNotes          | String 50  | Freeform contextual description                                                                                         | Optional          |
+| TWEnd1                | Date       | First time of day when this order closes (UTC)                                                                          | Optional          |
+| TWStart1              | Date       | First time of day when this order opens (UTC)                                                                           | Optional          |
+| ToBeRemoved           | String 5   | true or false - Should this order be deleted from the plan                                                              | Optional          |
