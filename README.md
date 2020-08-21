@@ -4,8 +4,9 @@ This repo contains documentation about Esri Professional Services' solution Ente
 
 
 ## Features
-* Install-Deployment
 * Configuration
+* Install-Deployment
+* Operational-Documentation
 * Schema
 
 ## Instructions
