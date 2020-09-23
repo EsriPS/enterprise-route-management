@@ -22,11 +22,11 @@ If you are using the **Workforce Extension for ERM**, follow Steps 5-7 below to 
 
 5. Retrive the ItemID you noted in Step 3 above.
 6. Generate a token using the steps below
-  * a. Go to https://<server name>/portal/sharing/rest/generateToken. <server name> represents the fully qualified domain name of the server that portal is deployed on.
+  * a. Go to https://\<server name\>/portal/sharing/rest/generateToken. \<server name\> represents the fully qualified domain name of the server that portal is deployed on.
   * b. Enter Username and Password. Use Portal credentials for an administrator level account.
   * c. For Webapp URL, enter the Portal URL. This should match the config.portalUrl value in the Middleware API config file.
 ![Image for generate token](https://user-images.githubusercontent.com/3834298/94065006-211f6b00-fdb0-11ea-9b81-90c254e36db9.png)
 
-7. Paste  https://<middleware server name>/ermapi/workforce/deletePlan?planItemId=XXX&token=YYY into your browser. <middleware server name> represents the fully qualified domain name of the server that Middleware API is deployed on.
+7. Paste  https://\<middleware server name\>/ermapi/workforce/deletePlan?planItemId=XXX&token=YYY into your browser. \<middleware server name\> represents the fully qualified domain name of the server that Middleware API is deployed on.
   * Replace XXX with the plan ID previously identified.
   * Replace YYY with the token that was generated.
