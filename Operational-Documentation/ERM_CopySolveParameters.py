@@ -1,3 +1,18 @@
+
+"""
+--------------------------------
+Name:        ERM_Copy Solve Parameters.py
+Purpose:     Copy default solve parameter records for each location
+Author:      Mike Nelson
+Created      5/26/2020
+Copyright:   (c) Esri
+ArcGIS Version:   2.4 (Pro)
+PYTHON Version:   3.6 (API 1.8)
+Requirements: update variables for feature class/table paths
+              Expects DepotTemplate to be fully populated before running
+--------------------------------
+"""
+
 import arcpy
 
 
