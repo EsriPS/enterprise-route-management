@@ -6,7 +6,7 @@
 | CurbApproach          | Int        | Requirement for how this location must be approached. Not Null small int. e.g. Either Side of Vehicle = 0               | Required          |
 | ServiceTime           | Float      | Time in minutes (fractional) it is anticipated this order will take to complete service                                 | Required          |
 | StopType              | String 8   | Pickup or Delivery                                                                                                      | Required          |
-| TimeZone              | String 50  | Time zone descriptive. E.g. "America/Los Angeles" in TZ Database format (https://en.wikipedia.org/wiki/Tz_database)     | Required          |
+| TimeZone              | String 50  | Time zone descriptive. Placeholder for future functionality. Time zone set in Depot feature.                            | Optional          |
 | X                     | Double     | Longitude in geographic coordinate system                                                                               | Required          |
 | Y                     | Double     | Latitude in geographic coordinate system                                                                                | Required          |
 | Address               | String 100 | Freeform contextual description. (String 100) nullable                                                                  | Optional          |
