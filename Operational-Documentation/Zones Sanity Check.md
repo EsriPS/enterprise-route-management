@@ -5,6 +5,7 @@ This job aid uses an ArcGIS Pro notebook to run geometric evaluations of a ZoneT
 ![Image for Add Zones](https://github.com/rConger/doc_images/blob/main/ZonesLayer.jpg?raw=true)
 
 3. Fron the Insert menu, choose to insert an existing notebook and browse to the location where you downloaded [ZoneChecker.ipynb](https://github.com/EsriPS/enterprise-route-management/commit/cce72a38f3d93997c7b468dfb65115b2ab617a96) to add it to the project
+
 ![Image for Add Notebook](https://github.com/rConger/doc_images/blob/main/addNotebook1.jpg?raw=true)
 
 4. From the Notebook folder in the project catalog view, find the notebook and open it
