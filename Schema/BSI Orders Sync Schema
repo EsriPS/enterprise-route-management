@@ -22,9 +22,10 @@
 | Destination           | String 50  | Freeform destination. Supply chain context. An order should terminate at the destination                                | Optional          |
 | DispLocDesc           | String 100 | Descriptive                                                                                                             | Optional          |
 | DispLocName           | String 10  | Dispatch area. where this order will be dispatched. A dispatch area might contain more than one depot                   | Optional          |
-| Geoorder_Cube         | Double     | Cubic volume in this order for calculating capacity                                                                     | Optional          |
+| Geoorder_Volume       | Double     | Cubic volume in this order for calculating capacity                                                                     | Optional          |
 | Geoorder_Pieces       | Double     | Number of pieces in this order for calculating capacity                                                                 | Optional          |
 | Geoorder_Weight       | Double     | Weight of this order for calculating capacity                                                                           | Optional          |
+| Geoorder_Units        | Double     | Number of Units of this order for calculating capacity                                                                  | Optional          |
 | Hazmat                | String 128 | Freeform contextual description                                                                                         | Optional          |
 | InboundArriveTime     | Date       | Date/time (in UTC) when this order is available for dispatch from depot                                                 | Optional          |
 | IsLocked              | String 5   | true or false - is this order locked to the route?                                                                      | Optional          |
