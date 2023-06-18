@@ -1,0 +1,6 @@
+| Field Name      | Data Type  | Description                                                                                                         | Optional/Required |
+|-----------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
+| FirstOrderName  | String 128 | Instructions to optimize an order relative to another. PU order prior to DEL the same order. FK to GeoOrder.orderid | Required          |
+| SecondOrderName | String 128 | Instructions to optimize an order relative to another. DEL order after it's PU. FK to GeoOrder.orderid              | Required          |
+| MaxTransitTime  | Float      | max time this order can spend on   a route from the time it's picked up to the time it's delivered. Minutes         | Optional          |
+| ToBeRemoved     | String 5   | true or false - Should this order pair be removed from the plan?                                                    | Optional          |
