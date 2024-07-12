@@ -1,0 +1,14 @@
+| Field Name           | Data Type  | Description                                                                               | Optional/Required |
+|----------------------|------------|-------------------------------------------------------------------------------------------|-------------------|
+| CollectionName       | String 128 | Name of this collection                                                                   | Required          |
+| Destination          | String 50  | Freeform contextual description                                                           | Optional          |
+| DestinationETA       | Date       | Time this collection is expected to be arrived/available for loading onto P&D routes. UTC | Optional          |
+| DispatchInstructions | String 100 | Freeform contextual description                                                           | Optional          |
+| EarliestCommit       | Date       | Time of the earliest service commitment in this collection. UTC                           | Optional          |
+| FinalDestination     | String 50  | Freeform contextual description                                                           | Optional          |
+| LocalOrders          | Int        | Descriptive Double precision                                                              | Optional          |
+| LocationDescription  | String 50  | Freeform contextual description                                                           | Optional          |
+| Origin               | String 50  | Freeform contextual description                                                           | Optional          |
+| ServiceLevel         | String 50  | Freeform contextual description                                                           | Optional          |
+| ToBeRemoved          | String 5   | true or false - Should this order be deleted from the plan                                | Optional          |
+| TotalOrders          | Int        | Freeform contextual description                                                           | Optional          |
